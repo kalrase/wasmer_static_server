@@ -1,6 +1,15 @@
+<!--
+ * @Author: liukai 1587680247@qq.com
+ * @Date: 2024-06-17 15:15:01
+ * @LastEditors: liukai 1587680247@qq.com
+ * @LastEditTime: 2024-06-17 15:35:36
+ * @FilePath: \svelte-wasmer-starter\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 This is a [Svelte](https://nextjs.org/) project bootstrapped with `npm create svelte@latest my-app`.
 
 ## Getting Started
+## this is a wasmer static server with svelte deploy by docker
 
 First, run the development server:
 
@@ -33,4 +42,11 @@ First, you'll need to run `npm run build`, and then, to deploy to Wasmer Edge:
 
 ```bash
 wasmer deploy
+```
+
+## Deploy on docker
+```bash
+docker build -t svelte-app:0.0.1 .
+
+docker run -p 5173:5173 svelte-app:0.0.1
 ```
